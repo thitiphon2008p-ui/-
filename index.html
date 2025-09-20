@@ -1,68 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
-<style>
-body {font-family: "Raleway", Arial, sans-serif}
-.w3-row img {margin-bottom: -8px}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>自我介紹網頁</title>
+  <style>
+    /* 全域設定 */
+    body {
+      font-family: Arial, "Noto Sans TC", sans-serif;
+      background-color: #f5f7fa;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    /* 頂部導覽列 */
+    header {
+      background-color: #007BFF;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* 主要內容 */
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+    }
+
+    /* 個人照片 */
+    .avatar {
+      width: 150px;
+      border-radius: 50%;
+      display: block;
+      margin: 0 auto;
+    }
+
+    /* 清單樣式 */
+    ul {
+      padding-left: 20px;
+    }
+
+    ol {
+      padding-left: 20px;
+    }
+
+    /* 表格樣式 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f0f0f0;
+    }
+
+    /* 超連結按鈕 */
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #28a745;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      margin-top: 10px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #218838;
+    }
+
+    /* 底部區域 */
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #eee;
+      color: #333;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<!-- !PAGE CONTENT! -->
-<div class="w3-content" style="max-width:1500px">
-
-  <!-- Header -->
-  <header class="w3-container w3-xlarge w3-padding-24">
-    <a href="#" class="w3-left w3-button w3-white">MY ART</a>
-    <a href="#about" class="w3-right w3-button w3-white">About</a>
+  <!-- 頂部區域 -->
+  <header>
+    <h1>我的自我介紹</h1>
   </header>
 
-  <!-- Photo Grid -->
-  <div class="w3-row">
-    <div class="w3-half">
-      <img src="/w3images/streetart.jpg" style="width:100%">
-      <img src="/w3images/streetart2.jpg" style="width:100%">
-      <img src="/w3images/streetart5.jpg" style="width:100%">
-    </div>
+  <!-- 主要內容 -->
+  <main>
+    <img src="https://via.placeholder.com/150" alt="大頭照" class="avatar">
+    <h2>大家好，我是王小明</h2>
+    <p>我是一位高中二年級的學生，平常喜歡寫程式、打籃球和閱讀。  
+    我希望未來能進入資訊工程系，深入學習軟體開發與人工智慧。</p>
 
-    <div class="w3-half">
-      <img src="/w3images/streetart3.jpg" style="width:100%">
-      <img src="/w3images/streetart4.jpg" style="width:100%">
-    </div>
-  </div>
-  
-<!-- End Page Content -->
-</div>
+    <hr>
 
-<!-- Footer / About Section -->
-<footer class="w3-light-grey w3-padding-64 w3-center" id="about">
-  <h2>About</h2>
-  <img src="/w3images/boy.jpg" class="w3-image w3-padding-32" width="300" height="300">
-  <form style="margin:auto;width:60%" action="/action_page.php" target="_blank">
-    <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-    <p class="w3-large w3-text-pink">Do not hesitate to contact me!</p>
-    <div class="w3-section">
-      <label><b>Name</b></label>
-      <input class="w3-input w3-border" type="text" required name="Name">
-    </div>
-    <div class="w3-section">
-      <label><b>Email</b></label>
-      <input class="w3-input w3-border" type="text" required name="Email">
-    </div>
-    <div class="w3-section">
-      <label><b>Message</b></label>
-      <input class="w3-input w3-border" required name="Message">
-    </div>
-    <button type="submit" class="w3-button w3-block w3-dark-grey">Send</button>
-  </form>
-  <br>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-</footer>
- 
+    <h3>🎯 我的興趣</h3>
+    <ul>
+      <li>程式設計</li>
+      <li>打籃球</li>
+      <li>閱讀小說</li>
+    </ul>
+
+    <h3>📚 我的目標</h3>
+    <ol>
+      <li>考上大學資訊工程系</li>
+      <li>學習更多程式語言（Python、JavaScript）</li>
+      <li>將來參與科技相關的專案</li>
+    </ol>
+
+    <h3>📊 我的課表（示例）</h3>
+    <table>
+      <tr>
+        <th>時間</th>
+        <th>星期一</th>
+        <th>星期二</th>
+      </tr>
+      <tr>
+        <td>上午</td>
+        <td>數學</td>
+        <td>程式設計</td>
+      </tr>
+      <tr>
+        <td>下午</td>
+        <td>英文</td>
+        <td>物理</td>
+      </tr>
+    </table>
+
+    <a href="mailto:example@mail.com" class="btn">📩 聯絡我</a>
+  </main>
+
+  <!-- 頁尾 -->
+  <footer>
+    &copy; 2025 王小明 — 自我介紹範例
+  </footer>
+
 </body>
 </html>
